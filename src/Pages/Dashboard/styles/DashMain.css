@@ -1,0 +1,53 @@
+.dash-main-wrapp {
+  position: relative;
+  padding: 120px 20px;
+  padding-bottom: 80px;
+  isolation: isolate;
+}
+.blur-circ1,
+.blur-circ2 {
+  position: absolute;
+  width: 842px;
+  height: 842px;
+  background: #df9200;
+  opacity: 0.14;
+  filter: blur(283.5px);
+  z-index: -1;
+}
+.blur-circ1 {
+  top: 60%;
+  left: -20%;
+  transform: translateY(-50%);
+}
+.blur-circ2 {
+  top: 70%;
+  right: -20%;
+  transform: translateY(-50%);
+}
+
+.nft-row-dash {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+  max-width: var(--max-width);
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .nft-row-dash {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    row-gap: 60px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .nft-row-dash {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}

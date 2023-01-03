@@ -1,0 +1,98 @@
+.dash-nft-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background: linear-gradient(90deg, #1b1b1b 5.06%, #1b1812 78.23%);
+  backdrop-filter: blur(4px);
+  padding: 6px 6px 10px 6px;
+  border-radius: 12px;
+  color: white;
+  max-width: 270px;
+  position: relative;
+}
+.count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--orange);
+  width: 53px;
+  height: 53px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  transform: translateY(-40%) translateX(40%);
+}
+.img-wrap-card {
+  background: #050301;
+  width: 100%;
+  height: 215px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-wrap-card img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+.dash-nft-card h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+  padding-inline: 10px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.dash-nft-card > p {
+  font-weight: 400;
+  line-height: 1.3;
+  padding-inline: 10px;
+  font-size: 14px;
+}
+.card-row {
+  padding-inline: 10px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-row p {
+  display: flex;
+  font-weight: 700;
+  font-size: 18px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.card-row p img {
+  width: 24px;
+  height: 24px;
+}
+.card-row h6 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--orange);
+}
+.dash-nft-card button {
+  width: 121px;
+  height: 38px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid var(--orange);
+  color: var(--orange);
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-inline: 10px;
+  margin-bottom: 20px;
+}
+.dash-nft-card button:hover {
+  background-color: var(--orange);
+  color: white;
+}

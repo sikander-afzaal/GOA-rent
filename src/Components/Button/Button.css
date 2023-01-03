@@ -1,0 +1,45 @@
+.transparent {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  display: grid;
+  transition: all 0.5s ease-in-out;
+  place-items: center;
+}
+.transparent:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+.cta-btn {
+  display: grid;
+  cursor: pointer;
+  place-items: center;
+  background-color: transparent;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--orange);
+}
+.cta-btn > div {
+  background-color: var(--orange);
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  transition: all 0.5s linear;
+}
+.cta-btn:hover > div {
+  background-color: transparent;
+  color: var(--orange);
+}
