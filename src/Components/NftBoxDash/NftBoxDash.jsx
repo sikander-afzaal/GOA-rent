@@ -15,7 +15,7 @@ const NftBoxDash = ({ img, name, desc, price, count }) => {
         </p>
         <h6 className="trajan">{price}</h6>
       </div>
-      <button>Buy Now</button>
+      <button>Rent</button>
     </div>
   );
 };
